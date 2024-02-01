@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class palindrome
+{
+	private:
+		int n;
+		int m;
+		int temp;
+		int sum=0;
+		public:
+			void getdata()
+			{
+				cin>>n;
+			}
+			void showdata()
+			{
+				temp=n;
+				while(n>0)
+				{
+					m=n%10;
+					sum=(sum*10)+m;
+					n=n/10;
+				}
+				if(sum==temp)
+				cout<<"n is palindrome:"<<sum;
+				else
+				cout<<"n is not a palindrome:"<<sum;
+			}
+}b;
+int main()
+{
+	b.getdata();
+	b.showdata();
+}
