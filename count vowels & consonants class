@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class count
+{
+	public:
+		string s="saveetha college";
+		int vowels,consonants;
+		public:
+			void showdata()
+			{
+				vowels=consonants=0;
+				for(int i=0;s[i]!='\0';i++)
+				{
+					
+					if(s[i]=='a'||s[i]=='e'||s[i]=='i'||s[i]=='o'||s[i]=='u')
+					{
+						vowels++;
+					}
+					else if(s[i]>='a'&&s[i]<='z')
+					{
+						consonants++;
+					}
+				}
+				cout<<"no of vowels:"<<vowels;
+				cout<<"\nno of consonants:"<<consonants;
+			}
+}b;
+int main()
+{
+	b.showdata();
+}
