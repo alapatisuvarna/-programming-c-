@@ -1,0 +1,11 @@
+#include<iostream>
+int main()
+{
+	int n;
+	std::cin>>n;
+	if(n>0)
+	std::cout<<"positive number";
+	else
+	std::cout<<"negative number";
+	return 0;
+}
