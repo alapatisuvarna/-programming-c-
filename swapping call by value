@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+void swap(int a,int b);
+int main(){
+    int m,n;
+    cout<<"Enter the m: ";
+    cin>>m;
+    cout<<"Enter the n: ";
+    cin>>n;
+    cout<<"Before swapping: "<<endl;
+    cout<<"m = "<<m<<endl;
+    cout<<"n = "<<n<<endl;
+    swap(m,n);
+    cout<<"\nAfter swapping: "<<endl;
+    cout<<"m = "<<m<<endl;
+    cout<<"n = "<<n;
+    return 0;
+}
+
+void swap(int a,int b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
