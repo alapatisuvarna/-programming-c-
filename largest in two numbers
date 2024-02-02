@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int m,n;
+    cout<<"Enter the m: ";
+    cin>>m;
+    cout<<"Enter the n: ";
+    cin>>n;
+    if(m>n)
+    cout<<"m is largest";
+    else
+    cout<<"n is largest";
+    return 0;
+}
