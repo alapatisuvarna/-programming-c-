@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string a,b;
+    cout<<"enter a value:";
+    cin>>a;
+    cout<<"enter b value:";
+    cin>>b;
+    if(a==b)
+    cout<<"valid user name";
+    else
+    cout<<"invalid user name";
+}
