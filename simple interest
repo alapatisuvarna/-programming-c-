@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+float si(int p,int t,float r,char customertype);
+int main()
+{
+	int p,t;
+	cout<<"p=";
+	cin>>p;
+	cout<<"t=";
+	cin>>t;
+	float r;
+	char customertype;
+	cout<<"customertype=";
+	cin>>customertype;
+	cout<<"simple interest"<<si(p,t,r,customertype);
+	return 0;
+}
+float si(int p,int t,float r,char customertype)
+{
+	if(customertype=='y'||customertype=='Y')
+	r=12.0;
+	else
+	r=10.0;
+	return p*t*r/100;
+}
