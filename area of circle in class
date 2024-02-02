@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class area
+{
+	private:
+		int r,a;
+		public:
+			void getdata()
+			{
+				cout<<"enter r value:";
+				cin>>r;
+			}
+			void showdata()
+			{
+				a=3.14*r*r;
+				cout<<"area of circle:"<<a;
+			}
+}a;
+int main()
+{
+	a.getdata();
+	a.showdata();
+}
