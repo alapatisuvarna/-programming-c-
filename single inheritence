@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class A
+{
+    public:
+    int x,y;
+    
+    int add(int x,int y){
+        return x+y;
+    }
+};
+
+class B : public  A
+{
+    public:
+};
+
+int main(){
+    int x,y;
+    cin>>x>>y;
+    A a;
+    B b;
+    cout<<"Sum is "<<b.add(x,y);
+    
+    return 0;
+}
