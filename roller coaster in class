@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class rollercoaster
+{
+    private:
+    int minimum_age,person_age;
+    public:
+    void getdata()
+    {
+        cout<<"minimum age of a person:";
+        cin>>minimum_age;
+        cout<<"enter the person age is:";
+        cin>>person_age;
+    }
+    void showdata()
+    {
+        if(minimum_age<=person_age)
+        cout<<"yes"<<endl;
+        else
+        cout<<"no"<<endl;
+    }
+}r;
+int main()
+{
+  r.getdata();
+  r.showdata();
+}
