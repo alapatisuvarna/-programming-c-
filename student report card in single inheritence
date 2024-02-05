@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class student
+{
+    public:
+    int m1,m2,m3,m4,m5;
+    int Total,average;
+};
+
+class student1 : public student
+{
+    public:
+    void check(int Total){
+    if(Total >= 450 && Total <=500)
+    cout<<"Grade is A"<<endl;
+    else if(Total >= 400 && Total < 450)
+    cout<<"Grade is B"<<endl;
+    else if(Total >= 350 && Total < 400)
+    cout<<"Grade is C"<<endl;
+    else if(Total >= 300 && Total < 350)
+    cout<<"Grade is D"<<endl;
+    else if(Total >= 250 && Total < 300)
+    cout<<"Grade is E"<<endl;
+    else
+    cout<<"Grade is F"<<endl;
+    }
+};
+
+int main(){
+    int m1,m2,m3,m4,m5;
+    cin>>m1>>m2>>m3>>m4>>m5;
+    int Total = m1+m2+m3+m4+m5;
+    int average = Total/5;
+    student s;
+    student1 s1;
+     cout<<"Total marks is : "<<Total<<endl;
+     cout<<"Avarage is "<<average<<endl;
+    s1.check(Total);
+    return 0;
+}
