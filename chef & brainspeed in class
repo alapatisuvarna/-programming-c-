@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+class brain_speed
+{
+    private:
+    int x,y;
+    public:
+    void getdata()
+    {
+        cout<<"brain speed is measured in bps:";
+        cin>>x;
+        cout<<"threshold limit of bps:";
+        cin>>y;
+    }
+    void showdata()
+    {
+    if(x>y)
+    cout<<"chef is prone to errors"<<endl;
+    else
+    cout<<"chef is not prone to errors";
+    }
+}b;
+int main()
+{
+    b.getdata();
+    b.showdata();
+}
