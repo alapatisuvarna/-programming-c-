@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class chef
+{
+    private:
+    int x,y,z;
+    public:
+    void getdata()
+    {
+    cout<<"minutes taken to cook:";
+    cin>>x;
+    cout<<"number of packets can cook:";
+    cin>>y;
+    }
+    void showdata()
+    {
+        cout<<"maximum customers can be served:"<<x*y;
+    }
+}c;
+int main()
+{
+    c.getdata();
+    c.showdata();
+}
