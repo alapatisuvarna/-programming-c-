@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+class A
+{
+    public:
+    void Afunc(){
+        cout<<"Sree"<<endl;
+    }
+};
+
+class B : public  A
+{
+   public:
+   void Bfunc(){
+        cout<<"Dog"<<endl;
+    }
+};
+
+class R : public A , public B{
+    public:
+    void Rfunc(){
+        cout<<"Parrot"<<endl;
+    }
+};
+
+int main(){
+    A person;
+    B animal;
+    R bird;
+    
+    cout<<"\n\n";
+    person.Afunc();
+    bird.Bfunc();
+    bird.Rfunc();
+    return 0;
+}
