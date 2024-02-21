@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+	string name;
+	int id;
+	int rno;
+	public:
+		void getdata()
+		{
+			cout<<"name:";
+			cin>>name;
+			cout<<"id:";
+			cin>>id;
+			cout<<"rno:";
+			cin>>rno;
+		}
+		void showdata()
+		{
+		  cout<<"name:"<<name<<endl;
+		  cout<<"id:"<<id<<endl;
+		  cout<<"rno:"<<rno;
+	    }
+}s;
+int main()
+{
+	s.getdata();
+	s.showdata();
+}
+
