@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+class myclass 
+{
+ static int count;
+    public:
+ myclass()
+    {
+      count++;
+    }
+static int getcount()
+    {
+      return count;
+    }
+};
+int myclass::count=0;
+int main()
+{
+    myclass obj1,obj2,obj3;
+    cout<<"count of object of myclass is:"<<myclass::getcount()<<endl;
+    return 0;
+}
