@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a[10],n=5,i,pos,x;
+  for(i=0;i<n;i++)
+  {
+    a[i]=i+1;
+  }
+  for(i=0;i<n;i++)
+  {
+    cout<<a[i];
+  }
+  x=50;
+  pos=5;
+  n++;
+  for(i=n-1;i>=pos;i++)
+  {
+    a[i]=a[i-1];
+    a[pos-1]=x;
+  }
+  for(i=0;i<n;i++)
+    cout<<"\n"<<a[i];
+}
