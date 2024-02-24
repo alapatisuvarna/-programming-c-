@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	private:
+	string name="jane doe";
+	int id=12345;
+    float m1,m2,m3,m4;
+    float sum,average;
+	public:
+		void getdata()
+        {
+          cout<<"student name:"<<name<<endl;
+          cout<<"student id:"<<id<<endl;
+          m1=85.5;
+          m2=90;
+          m3=87;
+          m4=92.5;
+          cout<<"grades:"<<m1<<"\n"<<m2<<"\n"<<m3<<"\n"<<m4<<endl;
+          sum=m1+m2+m3+m4;
+          average=sum/4;
+          cout<<"average:"<<average;
+        }
+  void showdata()
+  {
+    cin>>name;
+    cin>>id;
+    cin>>m1>>m2>>m3>>m4;
+    cin>>average;
+  }
+}s;
+int main()
+{
+  s.getdata();
+  s.showdata();
+}
+		
