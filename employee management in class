@@ -16,15 +16,8 @@ class employee
     totalsalary=salary+raisedsalary;
     cout<<"salary:"<<totalsalary;
   }
-  void showdata()
-  {
-    cin>>name;
-    cin>>id;
-    cin>>salary;
-  }
 }e;
 int main()
 {
   e.getdata();
-  e.showdata();
 }
