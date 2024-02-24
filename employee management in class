@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+  private:
+  string name="john doe";
+  string id="E12345";
+  int salary=10000;
+  int raisedsalary=5000;
+  int totalsalary;
+  public:
+  void getdata()
+  {
+    cout<<"Employee name:"<<name<<endl;
+    cout<<"Employee id:"<<id<<endl;
+    totalsalary=salary+raisedsalary;
+    cout<<"salary:"<<totalsalary;
+  }
+  void showdata()
+  {
+    cin>>name;
+    cin>>id;
+    cin>>salary;
+  }
+}e;
+int main()
+{
+  e.getdata();
+  e.showdata();
+}
