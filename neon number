@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,m,sum=0,i,temp;
+  cin>>n;
+  temp=n;
+  m=n*n;
+  while(m>0)
+  {
+    i=m%10;
+    sum=sum+i;
+    m=m/10;
+  }
+  if(temp==sum)
+    cout<<temp<<" is a neon number";
+  else
+    cout<<temp<<" is not a neon number";
+}
