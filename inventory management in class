@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class inventory_management
+{
+  private:
+  string name="laptop";
+  int quantity=10;
+  string item="laptop";
+  int removedquantity=3;
+  int totalquantity;
+  public:
+  void getdata()
+  {
+    cout<<"inventory updated."<<endl;
+    cout<<"Enter item name:"<<name<<endl;
+    cout<<"Enter quantity:"<<quantity<<endl;
+    cout<<"for removing stock:"<<endl;
+    cout<<"item:"<<item<<endl;
+    totalquantity=quantity-removedquantity;
+    cout<<"total quantity:"<<totalquantity;
+  }
+}i;
+int main()
+{
+  i.getdata();
+}
