@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class music_palyer
+{
+  private:
+  string name="shape of you";
+  string artist="Ed Sheeran";
+  string pause="song paused";
+  string stop="song stop";
+  public:
+  void getdata()
+  {
+    cout<<"Enter song name:"<<name<<endl;
+    cout<<"Enter artist name:"<<artist<<endl;
+    cout<<"pause:"<<pause<<endl;
+    cout<<"stop:"<<stop;
+  }
+}m;
+int main()
+{
+  m.getdata();
+}
