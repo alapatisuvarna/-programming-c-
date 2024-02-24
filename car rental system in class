@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class car
+{
+  private:
+  string carmodel="toyota camry";
+  int cost=50;
+  string availability="available";
+  public:
+  void getdata()
+  {
+    cout<<"Available cars in the rental system:"<<endl;
+    cout<<"car model:"<<carmodel<<endl;
+    cout<<"rental cost per day:"<<cost<<endl;
+    cout<<"availability:"<<availability;
+  }
+  void showdata()
+  {
+    cin>>carmodel;
+    cin>>cost;
+    cin>>availability;
+  }
+}c;
+int main()
+{
+  c.getdata();
+  c.showdata();
+}
