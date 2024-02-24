@@ -9,15 +9,17 @@ int main()
   {
     sum=0;
     while(n>0)
-      m=n%10;
-    sum=sum+(m*m);
-    n=n/10;
-  }
+    {
+       m=n%10;
+       sum=sum+(m*m);
+       n=n/10;
+    }
   n=sum;
 }
-if(sum==1)
-{
-  cout<<temp<<"is happy number";
+  if(sum==1)
+  {
+    cout<<temp<<"is happy number";
+  }
   else
     cout<<temp<<"is not a happy number";
 }
