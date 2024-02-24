@@ -14,15 +14,8 @@ class car
     cout<<"rental cost per day:"<<cost<<endl;
     cout<<"availability:"<<availability;
   }
-  void showdata()
-  {
-    cin>>carmodel;
-    cin>>cost;
-    cin>>availability;
-  }
 }c;
 int main()
 {
   c.getdata();
-  c.showdata();
 }
