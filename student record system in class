@@ -21,17 +21,10 @@ class student
           average=sum/4;
           cout<<"average:"<<average;
         }
-  void showdata()
-  {
-    cin>>name;
-    cin>>id;
-    cin>>m1>>m2>>m3>>m4;
-    cin>>average;
-  }
 }s;
 int main()
 {
   s.getdata();
-  s.showdata();
 }
+
 		
