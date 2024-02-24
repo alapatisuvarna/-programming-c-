@@ -17,17 +17,8 @@ class bankaccount
     cout<<"deposit:"<<deposit<<endl;
     cout<<"withdrawal:"<<withdrawal;
   }
-  void showdata()
-  {
-    cin>>no;
-    cin>>name;
-    cin>>balance;
-    cin>>deposit;
-    cin>>withdrawal;
-  }
 }b;
 int main()
 {
   b.getdata();
-  b.showdata();
 }
