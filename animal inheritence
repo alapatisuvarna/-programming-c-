@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+class animal
+{
+  public:
+  void name1()
+  {
+    cout<<"\ndog name is:juli";
+  }
+  void name2()
+  {
+    cout<<"\ncat name is: rio";
+  }
+  void species1()
+  {
+    cout<<"\n i belongs to dog community";
+  }
+  void species2()
+  {
+    cout<<"\n i belongs cat community";
+  }
+  void age1()
+  {
+    cout<<"\n 2 years old";
+  }
+  void age2()
+  {
+    cout<<"\n 4 years old";
+  }
+};
+class dog:public animal
+{
+public:
+void weight()
+{
+cout<<"\n 8 kg";
+}
+void breed1()
+{
+cout<<"\n pug";
+}
+};
+class cat:public animal
+{
+public:
+void color()
+{
+cout<<"\n white";
+}
+void breed2()
+{
+cout<<"\n persion";
+}
+};
+int main()
+{
+  dog d1;
+  d1.name1();
+  d1.species1();
+  d1.age1();
+  d1.weight();
+  d1.breed1();
+  cat c1;
+    c1.name2();
+  c1.species2();
+  c1.age2();
+  c1.color();
+  c1.breed2();
+}
