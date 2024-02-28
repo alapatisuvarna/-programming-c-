@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+class vehicle
+{
+  public:
+  void make1()
+  {
+    cout<<"\n ford";
+  }
+  void make2()
+  {
+    cout<<"\n mahindra";
+  }
+  void model1()
+  {
+    cout<<"\n ford mustang";
+  }
+  void model2()
+  {
+    cout<<"\n mahindra furio";
+  }
+  void year1()
+  {
+    cout<<"\n year:1936";
+  }
+  void year2()
+  {
+    cout<<"\n year:1953";
+  }
+};
+class car:public vehicle
+{
+public:
+void seatingcapacity()
+{
+cout<<"\n seating capacity:4 people";
+}
+void fueltype()
+{
+cout<<"\n fuel type:petrol";
+}
+};
+class truck:public vehicle
+{
+public:
+void payloadcapacity()
+{
+cout<<"\n 1 ton capacity";
+}
+void towingcapacity()
+{
+cout<<"\n 26000 lbs";
+}
+};
+int main()
+{
+  car c;
+  c.make1();
+  c.model1();
+  c.year1();
+  c.seatingcapacity();
+  c.fueltype();
+  truck t;
+  t.make1();
+  t.model1();
+  t.year1();
+  t.payloadcapacity();
+  t.towingcapacity();
+}
