@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+class bank
+{
+  public:
+  string name;
+  int accno;
+  float balance;
+  float deposit;
+  float _balance;
+  ~bank()
+  {
+    cout<<"\n\n john account is destroyed";
+  }
+  void display(string name,int accn0,float balance)
+  {
+    cout<<"account details:\n";
+    cout<<"name:"<<name<<endl;
+    cout<<"account number:"<<accno<<endl;
+    cout<<"balance:"<<balance<<endl;
+  }
+  void _deposit(float _balance,float deposit)
+  {
+    cout<<"\n deposited:"<<deposit;
+    cout<<"\t\tnew balance:"<<_balance;
+  }
+  void withdraw(float withdraw,float _balance)
+  {
+    float balance=_balance-withdraw;
+    cout<<"\nwithdraw:"<<withdraw;
+    cout<<"/t/tnew balance:"<<balance;
+  }
+};
+int main()
+{
+  bank b;
+  string name="suvarna";
+  int accno=864852;
+  float balance=6000;
+  float deposit=2000;
+  float withdraw=1000;
+  float _balance=balance+deposit;
+  b.display(name,accno,balance);
+  b._deposit(_balance,deposit);
+  b.withdraw(withdraw,_balance);
+}
