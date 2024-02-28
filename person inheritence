@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+class person
+{
+  public:
+  void name1()
+  {
+    cout<<"\n student name is rahul";
+  }
+  void name2()
+  {
+    cout<<"\n teacher name is seetha";
+  }
+  void age1()
+  {
+    cout<<"\n 12 years old";
+  }
+  void age2()
+  {
+    cout<<"\n 30 years old";
+  }
+  void gender1()
+  {
+    cout<<"male";
+  }
+  void gender2()
+  {
+    cout<<"\n female";
+  }
+};
+class student:public person
+{
+public:
+void rno()
+{
+cout<<"\n roll number is: 8";
+}
+void class1()
+{
+cout<<"\n 9th class";
+}
+};
+class teacher:public person
+{
+public:
+void subject()
+{
+cout<<"\n subject:maths";
+}
+void salary()
+{
+cout<<"\n salary:30000";
+}
+};
+int main()
+{
+  student s;
+  s.name1();
+  s.age1();
+  s.gender1();
+  s.rno();
+  s.class1();
+  teacher t;
+  t.name2();
+  t.age2();
+  t.gender2();
+  t.subject();
+  t.salary();
+}
