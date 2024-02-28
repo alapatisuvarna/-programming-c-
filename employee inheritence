@@ -1,0 +1,69 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+  public:
+  void name1()
+  {
+    cout<<"\n myself sree";
+  }
+  void name2()
+  {
+    cout<<"\n myself sushma";
+  }
+  void id1()
+  {
+    cout<<"\n 192372121";
+  }
+  void id2()
+  {
+    cout<<"\n 510383712";
+  }
+  void salary1()
+  {
+    cout<<"\n 20000";
+  }
+  void salary2()
+  {
+    cout<<"\n 25000";
+  }
+};
+class manager:public employee
+{
+public:
+void department()
+{
+cout<<"\n department of investment banker";
+}
+void bonus()
+{
+cout<<"\n bonus:5000";
+}
+};
+class engineer:public employee
+{
+public:
+void speciality()
+{
+cout<<"\n speciality is working overtime";
+}
+void hours()
+{
+cout<<"\n 8 hours";
+}
+};
+int main()
+{
+  manager m;
+  m.name1();
+  m.id1();
+  m.salary1();
+  m.department();
+  m.bonus();
+  engineer e;
+  e.name2();
+  e.id2();
+  e.salary2();
+  e.speciality();
+  e.hours();
+}
